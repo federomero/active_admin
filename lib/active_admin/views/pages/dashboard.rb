@@ -17,7 +17,7 @@ module ActiveAdmin
         def build_sidebar; end
 
         def title
-          @page_title || I18n.t("active_admin.dashboard")
+          assigns[:page_title] || I18n.t("active_admin.dashboard")
         end
 
         def render_sections(sections)
